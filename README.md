@@ -52,7 +52,7 @@ Check the app presentation [here]().
 
 You can checkout the live running version of this app at the following link:
 
-[https://vehicles-ftme.onrender.com](Live demo)
+[Live demo](https://vehicles-ftme.onrender.com)
 
 <!-- GETTING STARTED -->
 
