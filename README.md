@@ -121,6 +121,7 @@ Mark Rubanza
 - **More info about vehicles**
 - **Additional functional pages**
 - **Desktop version**
+- **Add Icons to each category**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
