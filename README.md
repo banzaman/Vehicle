@@ -52,7 +52,7 @@ Check the app presentation [here](https://www.loom.com/share/fac90e263eb34d9bba3
 
 You can checkout the live running version of this app at the following link:
 
-[Live demo](https://vehicles-ftme.onrender.com)
+[Live demo](https://vehicles-app.onrender.com/)
 
 <!-- GETTING STARTED -->
 
