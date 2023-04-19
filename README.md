@@ -48,7 +48,7 @@ This React capstone project about building a mobile web application to check a l
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Check the app presentation [here]().
+Check the app presentation [here](https://www.loom.com/share/fac90e263eb34d9bba3c0df18ebb5491).
 
 You can checkout the live running version of this app at the following link:
 
