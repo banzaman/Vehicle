@@ -100,7 +100,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-This project was deploy using Render.com, there is no cl.
+This project was deployed using Render.com.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
