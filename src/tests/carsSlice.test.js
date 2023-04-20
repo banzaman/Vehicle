@@ -1,16 +1,35 @@
-import fetchCars from './__mocks__/fetchCars';
+import { fetchCars, carsSlice } from '../redux/carsSlice';
 
 // Unit testing
-describe('fetchCars', () => {
-  test('Should return defined data', () => {
-    expect(fetchCars()).toBeDefined();
+describe('carsSlice', () => {
+  const initialState = {
+    cars: [],
+    status: 'idle',
+  };
+
+  it('should handle fetchCars.pending', () => {
+    const action = { type: fetchCars.pending.type };
+    const state = carsSlice.reducer(initialState, action);
+    expect(state.status).toBe('loading');
   });
 
-  test('Fetch car must return a value of 2', () => {
-    expect(fetchCars()).toHaveLength(2);
+  it('should handle fetchCars.fulfilled', () => {
+    const payload = {
+      count: 2,
+      results: [
+        { MakeId: '1', MakeName: 'Toyota' },
+        { MakeId: '2', MakeName: 'Honda' },
+      ],
+    };
+    const action = { type: fetchCars.fulfilled.type, payload };
+    const state = carsSlice.reducer(initialState, action);
+    expect(state.status).toBe('succeeded');
+    expect(state.cars).toEqual(payload.results);
   });
 
-  test('First fetched car must be "ASTON MARTIN"', () => {
-    expect(fetchCars()[0].MakeName).toBe('ASTON MARTIN');
+  it('should handle fetchCars.rejected', () => {
+    const action = { type: fetchCars.rejected.type };
+    const state = carsSlice.reducer(initialState, action);
+    expect(state.status).toBe('error');
   });
 });

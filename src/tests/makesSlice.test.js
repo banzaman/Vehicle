@@ -1,6 +1,5 @@
 import fetchMakes from './__mocks__/fetchMakes';
 
-// Unit testing
 describe('fetchMakes', () => {
   test('Should return defined data', () => {
     expect(fetchMakes()).toBeDefined();
